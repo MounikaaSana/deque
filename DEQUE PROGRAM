@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Deque deque=new ArrayDeque();
+	    deque.add("ravi");
+	    deque.add("vijay");
+	    deque.add("ajay");
+	    deque.add(11);
+	    deque.offerFirst("HI");//adds at first position
+	    deque.offer(22);//adds at last position
+	    deque.poll();//first element gets deleted
+	    deque.pollLast();//last element gets deleted
+	    for(Object str : deque)//object keyword can accept any datatype
+	    {
+		System.out.println(str);
+	    }
+	}
+}
